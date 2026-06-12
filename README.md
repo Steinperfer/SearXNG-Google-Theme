@@ -13,7 +13,7 @@ sudo nano /usr/local/searxng/searxng-src/searx/templates/simple/index.html
 ```  
 
 
-Paste this
+Paste this, and its done !
 
 ```bash
 {% extends "simple/base.html" %}
