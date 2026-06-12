@@ -21,20 +21,20 @@ Paste this, and its done !
 
 {% block content %}
 <style>
-    /* Allgemeiner Hintergrund */
+    /* General background */
     body, html, #main_index, #index, #main_results, .wrapper {
         background-color: #383838 !important;
         background: #383838 !important;
     }
 
-    /* Alle Container im Suchkopf transparent halten */
+    /* Keep all containers in the search header transparent */
     #search, #search_header, #search_view, .search_filters {
         background-color: transparent !important;
         background: transparent !important;
         border-color: transparent !important;
     }
 
-    /* Nur die eigentliche Suchbox wird weiß gefärbt */
+    /* Only the actual search box is white */
     .search_box {
         background-color: #fdfdfd !important;
         background: #fdfdfd !important;
@@ -42,45 +42,45 @@ Paste this, and its done !
         border-radius: 24px !important;
     }
 
-    /* Autocomplete-Box wird erst weiß, wenn sie aktiv eingeblendet wird */
+    /* Autocomplete box turns white only when it is actively shown */
     .autocomplete[style*="display: block"], .autocomplete ul {
         background-color: #fdfdfd !important;
         background: #fdfdfd !important;
         border-color: #fdfdfd !important;
     }
 
-    /* Textfarbe von dem, was man in die Suchleiste eintippt */
+    /* Text color of what you type into the search bar */
     #q {
         color: #474747 !important;
         background-color: transparent !important;
         background: transparent !important;
     }
 
-    /* Hintergrund für Löschen- und Suchen-Buttons weiß erzwingen */
+    /* Force white background for clear and search buttons */
     #clear_search, #send_search, button[type="reset"], button[type="submit"] {
         background-color: #fdfdfd !important;
         background: #fdfdfd !important;
         border: none !important;
     }
 
-    /* Suchbar-Buttons (Kreuz und Lupe) im originalen Google-Grau */
+    /* Search bar buttons (X and magnifying glass) in original Google gray */
     #clear_search svg, #send_search svg, #clear_search span, #send_search span {
         fill: #70757a !important;
         color: #70757a !important;
     }
 
-    /* Schriftfarbe des Platzhalters (was immer da steht, wenn leer) */
+    /* Placeholder text color (text shown when empty) */
     #q::placeholder {
         color: #606268 !important;
         opacity: 1 !important;
     }
 
-    /* Textfarbe der Suchvorschläge, wenn sie sich aufklappen */
+    /* Text color of search suggestions when they expand */
     .autocomplete ul li, .autocomplete_selected, .autocomplete ul li a {
         color: #060606 !important;
     }
 
-    /* Farbe des ausgewählten Feldes bei den Suchvorschlägen */
+    /* Background color of the selected search suggestion */
     .autocomplete ul li:hover, 
     .autocomplete ul li.autocomplete_selected,
     .autocomplete ul li:active {
@@ -94,9 +94,9 @@ Paste this, and its done !
     {% include 'simple/simple_search.html' %}
 </div>
 
-<!-- Google-Style Shortcuts Grid -->
+<!-- Google-style shortcuts grid -->
 <div id="shortcut-grid" style="display: flex; justify-content: center; gap: 24px; margin-top: 35px; flex-wrap: wrap; font-family: arial, sans-serif; max-width: 600px; margin-left: auto; margin-right: auto; -webkit-user-select: none; user-select: none;">
-    <!-- Die 6 Shortcuts werden hier geladen -->
+    <!-- The 6 shortcuts are loaded here -->
 </div>
 
 <script>
@@ -112,10 +112,10 @@ function initShortcuts() {
         tile.style = "display: flex; flex-direction: column; align-items: center; width: 75px; position: relative;";
         
         if (item && item.url) {
-            // Deine funktionierende Codezeile für die absolut saubere Domain
+            // Your working line of code for a perfectly clean domain
             let cleanDomain = item.url.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0];
             
-            // Verknüpft die korrekte Domain direkt mit der Google-Schnittstelle
+            // Links the correct domain directly to the Google favicon service
             const iconUrl = "https://www.google.com/s2/favicons?sz=256&domain=" + cleanDomain;
             
             tile.innerHTML = `
@@ -131,12 +131,12 @@ function initShortcuts() {
             let pressTimer;
             let isLongPress = false;
             
-            // Exakt 5 Sekunden gedrückt halten bringt das Bestätigungsfenster
+            // Holding for exactly 5 seconds triggers the confirmation dialog
             const startPress = (e) => {
                 isLongPress = false;
                 pressTimer = setTimeout(() => {
                     isLongPress = true;
-                    if (confirm(`Möchtest du den Shortcut "${item.name}" wirklich löschen?`)) {
+                    if (confirm(`Do you really want to delete the shortcut "${item.name}"?`)) {
                         clearTile(i);
                     }
                 }, 5000); 
@@ -165,7 +165,7 @@ function initShortcuts() {
                 <div onclick="editTile(${i})" class="icon-bg" style="width: 48px; height: 48px; border-radius: 50%; background-color: #2e2e2e; border: 1px dashed #606268; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; cursor: pointer; color: #f8f8f8; font-size: 20px; font-weight: bold; transition: background 0.1s;">
                     +
                 </div>
-                <span style="font-size: 11px; color: #f8f8f8; white-space: nowrap;">Hinzufügen</span>
+                <span style="font-size: 11px; color: #f8f8f8; white-space: nowrap;">Add</span>
             `;
         }
         grid.appendChild(tile);
@@ -178,10 +178,10 @@ function initShortcuts() {
 }
 
 function editTile(index) {
-    let url = prompt("Website-URL eingeben (z.B. youtube.com):");
+    let url = prompt("Enter website URL (e.g. youtube.com):");
     if (!url) return;
     
-    let name = prompt("Name für den Shortcut eingeben:");
+    let name = prompt("Enter a name for the shortcut:");
     if (!name) return;
     
     if (!/^https?:\/\//i.test(url)) {
