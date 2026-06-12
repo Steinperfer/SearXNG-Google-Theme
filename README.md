@@ -1,8 +1,8 @@
 # SearXNG-Google-Homepgae
 SearXNG Google Homepgae
 
-<img width="2559" height="1325" alt="sear" src="https://github.com/user-attachments/assets/e539c3bd-7b73-4282-bb65-feed377778c9" />
-
+<img width="2559" height="1325" alt="sear" src="https://github.com/user-attachments/assets/e539c3bd-7b73-4282-bb65-feed377778c9" />  
+press 5sec on the shortcut to delete it  
 <img width="2559" height="1325" alt="Bildschirmfoto_20260612_183403" src="https://github.com/user-attachments/assets/ad556e6b-4964-433b-9baa-fd78e2496939" />
 
 ```bash
