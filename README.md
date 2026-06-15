@@ -7,12 +7,9 @@ press 5sec on the shortcut to delete it
 
 <img width="1432" height="827" alt="Bildschirmfoto_20260612_183908" src="https://github.com/user-attachments/assets/83a17b4b-a19a-496d-aaea-fe529f698d8c" />
   
-<img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />
-  
 <img width="2559" height="1396" alt="Bildschirmfoto_20260615_083202" src="https://github.com/user-attachments/assets/7e90b9af-391b-43fc-8f34-9fbed515fc0d" />
   
 <img width="2559" height="1393" alt="Bildschirmfoto_20260615_083134" src="https://github.com/user-attachments/assets/77e583a5-3964-4fbd-8d5f-6da8a5eb0d7b" />
-
 
 # Installation,
 # you need to move 5 of 6 files to this path:  
@@ -34,3 +31,12 @@ search.html
 ```
 images.html
 ```
+
+<img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />
+# 10sec leftclick to remove the AI tab forever, 
+can be reversed by typing this in the browser console
+```
+localStorage.removeItem('ai_tab_hidden')
+```
+# Or change th 1 to a 0 in "ACTIVATE-AI.txt"
+you can also remove # befor the url and claude will open everytime you click on AI, you can use every url  you want it will just open a new window insted of the thing you searched in google  
