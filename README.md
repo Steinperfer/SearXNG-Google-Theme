@@ -2,7 +2,7 @@
 SearXNG Google Homepgae
 
 <img width="2559" height="1325" alt="sear" src="https://github.com/user-attachments/assets/e539c3bd-7b73-4282-bb65-feed377778c9" />  
-press 5sec on the shortcut to delete it  
+# Leftclick 5sec on the shortcut to delete it  
 <img width="2559" height="1325" alt="Bildschirmfoto_20260612_183403" src="https://github.com/user-attachments/assets/ad556e6b-4964-433b-9baa-fd78e2496939" />
 
 <img width="1432" height="827" alt="Bildschirmfoto_20260612_183908" src="https://github.com/user-attachments/assets/83a17b4b-a19a-496d-aaea-fe529f698d8c" />
@@ -33,7 +33,7 @@ images.html
 ```
 
 <img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />
-# 10sec leftclick to remove the AI tab forever, 
+# leftclick 10sec to remove the AI tab forever, 
 can be reversed by typing this in the browser console
 ```
 localStorage.removeItem('ai_tab_hidden')
