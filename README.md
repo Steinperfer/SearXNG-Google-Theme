@@ -26,9 +26,9 @@ can be reversed by typing this in the browser console
 localStorage.removeItem('ai_tab_hidden')
 ```  
 # Or change the 1 to a 0 in "ACTIVATE-AI.txt"  
-You can also remove the # from the URL; then, Claude will open every time you click on AI.  
-You can use any URL you like; a new window will simply open instead of the page you searched for on Google loading.  
-  
+Normally, Google AI opens in a new tab—using the content you searched for.  
+You can also remove the # from the URL; Then Claude will open instead.  
+You can use any URL you like; a new window will simply open .  
   
 <img width="2559" height="1396" alt="Bildschirmfoto_20260615_083202" src="https://github.com/user-attachments/assets/7e90b9af-391b-43fc-8f34-9fbed515fc0d" />
     
