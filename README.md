@@ -7,10 +7,15 @@ press 5sec on the shortcut to delete it
 
 <img width="1432" height="827" alt="Bildschirmfoto_20260612_183908" src="https://github.com/user-attachments/assets/83a17b4b-a19a-496d-aaea-fe529f698d8c" />
 
-goto
-```bash
-sudo nano /usr/local/searxng/searxng-src/searx/templates/simple/index.html
-```  
+
+
+categories.html
+ACTIVATE-AI.txt
+index.html
+macros.html
+search.html
+/usr/local/searxng/searxng-src/searx/templates/simple/
+
 
 
 Paste this, and its done !
