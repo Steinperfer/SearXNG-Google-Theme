@@ -2,11 +2,32 @@
 {% from 'simple/icons.html' import icon_big %}
 
 {% block content %}
+<div id="main_index" class="index">
 <style>
     /* General background */
     body, html, #main_index, #index, #main_results, .wrapper {
         background-color: #383838 !important;
         background: #383838 !important;
+    }
+
+    /* Override default vertical centering — content should be at top */
+    #main_index {
+        margin-top: 5vh !important;
+    }
+
+    /* Scale search area +10% */
+    .search_box {
+        transform: scale(1.10);
+    }
+
+    /* Scale logo +2% */
+    .index .title {
+        transform: scale(1.02);
+    }
+
+    /* Scale shortcut icons +3% */
+    .icon-bg {
+        transform: scale(1.03);
     }
 
     /* Keep all containers in the search header transparent */
@@ -22,6 +43,8 @@
         background: #fdfdfd !important;
         border: 1px solid #fdfdfd !important;
         border-radius: 24px !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
     }
 
     /* Autocomplete box turns white only when it is actively shown */
@@ -38,11 +61,23 @@
         background: transparent !important;
     }
 
-    /* Force white background for clear and search buttons */
-    #clear_search, #send_search, button[type="reset"], button[type="submit"] {
-        background-color: #fdfdfd !important;
-        background: #fdfdfd !important;
+    /* Clear and search buttons inside search box */
+    #clear_search, #send_search {
+        background: transparent !important;
         border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 8px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    .search_box #clear_search, .search_box #send_search {
+        background: transparent !important;
     }
 
     /* Search bar buttons (X and magnifying glass) in original Google gray */
@@ -71,10 +106,8 @@
     }
 </style>
 
-<div class="index">
     <div class="title"><h1>SearXNG</h1></div>
     {% include 'simple/simple_search.html' %}
-</div>
 
 <!-- Google-style shortcuts grid -->
 <div id="shortcut-grid" style="display: flex; justify-content: center; gap: 24px; margin-top: 35px; flex-wrap: wrap; font-family: arial, sans-serif; max-width: 600px; margin-left: auto; margin-right: auto; -webkit-user-select: none; user-select: none;">
@@ -186,4 +219,5 @@ function clearTile(index) {
 
 document.addEventListener("DOMContentLoaded", initShortcuts);
 </script>
+</div>
 {% endblock %}
