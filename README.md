@@ -20,15 +20,16 @@ git clone https://github.com/Steinperfer/SearXNG-Google-Homepgae.git /tmp/sx && 
   
 <img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />  
   
-# leftclick 10sec on "AI" to remove it forever, 
+# Leftclick "AI" for 10sec to remove it forever, 
 can be reversed by typing this in the browser console
 ```
 localStorage.removeItem('ai_tab_hidden')
-```
-# Or change th 1 to a 0 in "ACTIVATE-AI.txt"
-you can also remove # befor the url and claude will open everytime you click on AI, 
-you can use every url  you want it, will just open a new window insted of the thing you searched in google  
-
+```  
+# Or change th 1 to a 0 in "ACTIVATE-AI.txt"  
+You can also remove the # from the URL; then, Claude will open every time you click on AI.  
+You can use any URL you like; a new window will simply open instead of the page you searched for on Google loading.  
+  
+  
 <img width="2559" height="1396" alt="Bildschirmfoto_20260615_083202" src="https://github.com/user-attachments/assets/7e90b9af-391b-43fc-8f34-9fbed515fc0d" />
     
 <img width="2559" height="1393" alt="Bildschirmfoto_20260615_083134" src="https://github.com/user-attachments/assets/77e583a5-3964-4fbd-8d5f-6da8a5eb0d7b" />
