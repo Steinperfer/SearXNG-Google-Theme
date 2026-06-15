@@ -1,6 +1,12 @@
 # SearXNG-Google-Theme
 SearXNG Google Homepgae
 
+# Autoinstall
+```bash
+git clone https://github.com/Steinperfer/SearXNG-Google-Homepgae.git /tmp/sx && cp /tmp/sx/{categories.html,ACTIVATE-AI.txt,index.html,macros.html,search.html} /usr/local/searxng/searxng-src/searx/templates/simple/ && cp /tmp/sx/images.html /usr/local/searxng/searxng-src/searx/templates/simple/result_templates/ && rm -rf /tmp/sx && sudo systemctl restart searxng
+```
+
+
 <img width="2559" height="1325" alt="sear" src="https://github.com/user-attachments/assets/e539c3bd-7b73-4282-bb65-feed377778c9" />   
 
 # Leftclick 5sec on the shortcut to delete it  
