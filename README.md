@@ -39,8 +39,8 @@ sudo systemctl restart searxng
 ```
 
 
-<img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />
-# leftclick 10sec to remove the AI tab forever, 
+<img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />  
+# leftclick 10sec on "AI" to remove it forever, 
 can be reversed by typing this in the browser console
 ```
 localStorage.removeItem('ai_tab_hidden')
