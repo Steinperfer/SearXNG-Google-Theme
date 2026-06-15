@@ -24,13 +24,18 @@ macros.html
 search.html
 ```
 
-# An Images in the result-templates folder
+# An images.html in the result-templates folder
 ```
 /usr/local/searxng/searxng-src/searx/templates/simple/result_templates/
 ```
 ```
 images.html
 ```
+# noiw just restart SearXNG
+```
+sudo systemctl restart searxng
+```
+
 
 <img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />
 # leftclick 10sec to remove the AI tab forever, 
