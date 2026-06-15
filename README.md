@@ -39,4 +39,5 @@ can be reversed by typing this in the browser console
 localStorage.removeItem('ai_tab_hidden')
 ```
 # Or change th 1 to a 0 in "ACTIVATE-AI.txt"
-you can also remove # befor the url and claude will open everytime you click on AI, you can use every url  you want it will just open a new window insted of the thing you searched in google  
+you can also remove # befor the url and claude will open everytime you click on AI, 
+you can use every url  you want it, will just open a new window insted of the thing you searched in google  
