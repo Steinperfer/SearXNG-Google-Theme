@@ -29,7 +29,8 @@ localStorage.removeItem('ai_tab_hidden')
 Normally, Google AI opens in a new tab—using the content you searched for.  
 In ACTIVATE-AI.txt you can also remove the # from the URL; Then Claude will open instead.  
 You can use any URL you like; a new window will simply open .  
-  
+
+   
 <img width="2559" height="1396" alt="Bildschirmfoto_20260615_083202" src="https://github.com/user-attachments/assets/7e90b9af-391b-43fc-8f34-9fbed515fc0d" />
     
 <img width="2559" height="1393" alt="Bildschirmfoto_20260615_083134" src="https://github.com/user-attachments/assets/77e583a5-3964-4fbd-8d5f-6da8a5eb0d7b" />
