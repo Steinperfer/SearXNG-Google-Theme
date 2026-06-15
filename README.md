@@ -15,9 +15,11 @@ git clone https://github.com/Steinperfer/SearXNG-Google-Homepgae.git /tmp/sx && 
 # Leftclick 5sec on the shortcut to delete it  
     
 <img width="1432" height="827" alt="Bildschirmfoto_20260612_183908" src="https://github.com/user-attachments/assets/83a17b4b-a19a-496d-aaea-fe529f698d8c" />  
+  
 "this will be in english"  
   
 <img width="396" height="223" alt="Bildschirmfoto_20260615_083225" src="https://github.com/user-attachments/assets/dbc1fdea-5d93-4261-8bb6-10494350f9bb" />  
+  
 # leftclick 10sec on "AI" to remove it forever, 
 can be reversed by typing this in the browser console
 ```
