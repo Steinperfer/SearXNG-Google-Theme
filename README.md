@@ -3,7 +3,7 @@ SearXNG Google Homepgae
 
 # Autoinstall
 ```bash
-git clone https://github.com/Steinperfer/SearXNG-Google-Homepgae.git /tmp/sx && sudo mkdir -p /usr/local/searxng/searxng-src/searx/templates/simple/result_templates && sudo cp /tmp/sx/{categories.html,ACTIVATE-AI.txt,index.html,macros.html,search.html} /usr/local/searxng/searxng-src/searx/templates/simple/ && sudo cp /tmp/sx/images.html /usr/local/searxng/searxng-src/searx/templates/simple/result_templates/ && rm -rf /tmp/sx && sudo systemctl restart searxng
+git clone https://github.com/Steinperfer/SearXNG-Google-Homepgae.git /tmp/sx && sudo mkdir -p /var/lib/searxng/venv/lib/python3.14/site-packages/searx/templates/simple/result_templates && sudo cp /tmp/sx/{categories.html,ACTIVATE-AI.txt,index.html,macros.html,search.html} /var/lib/searxng/venv/lib/python3.14/site-packages/searx/templates/simple/ && sudo cp /tmp/sx/images.html /var/lib/searxng/venv/lib/python3.14/site-packages/searx/templates/simple/result_templates/ && rm -rf /tmp/sx && sudo systemctl restart searxng
 ```  
   
 
